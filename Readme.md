@@ -1,6 +1,6 @@
 # Knapsack project
 
-the project is all about shopping card given the possibility of choosing items and put inside a baskets. showing the capacity and the items selected by the clients.
+The project is all about shopping card, given the possibility of choosing items and put inside baskets. Showing the capacity and the items selected by the clients.
 
 ## App
 
