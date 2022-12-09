@@ -8,6 +8,40 @@
     <link rel="stylesheet" href="assets/styles/style.css" />
   </head>
   <body>
- 
+    <div class="knapsack res">
+      <input
+        type="number"
+        name="weight"
+        value="weight"
+        id="capacity"
+        placeholder="input the weight"
+      />
+      <button class="done">done</button>
+      <select name="slc" id="slct" class="slcv">
+        <option value="please select">please select</option>
+
+        <option value="Computer Science Subjects">
+          Computer Science Subjects
+        </option>
+        <option value="Operating System">Operating System</option>
+        <option value="Computer Networks">Computer Networks</option>
+        <option value="Data Structure">Data Structure</option>
+        <option value="Algorithm">Algorithm</option>
+        <option value="C programming">C programming</option>
+        <option value="JAVA">JAVA</option>
+      </select>
+
+      <button class="add">add</button>
+      <button class="Reset">Reset</button>
+
+      <div class="total">
+        <i class="weight"></i>
+        <i class="value"></i>
+        <i class="capacity"></i>
+        <p class="text"><br /></p>  
+      </div>
+    </div>
+
+    <script src="assets/scripts/script.js"></script>
   </body>
 </html>
