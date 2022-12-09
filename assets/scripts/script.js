@@ -1,18 +1,18 @@
-const test = document.querySelector(".add");
-const load = document.querySelector(".reset");
-const text = document.querySelector(".text");
-const slct1 = document.getElementById("slct");
-const capi = document.getElementById("capacity");
-const done = document.querySelector(".done");
-const totalW = document.querySelector(".weight");
-const totalV = document.querySelector(".value");
-const capa = document.querySelector(".capacity");
+const test = document.querySelector(".add")
+const load = document.querySelector(".reset")
+const text = document.querySelector(".text")
+const slct1 = document.getElementById("slct")
+const capi = document.getElementById("capacity")
+const done = document.querySelector(".done")
+const totalW = document.querySelector(".weight")
+const totalV = document.querySelector(".value")
+const capa = document.querySelector(".capacity")
 let knapSack = {
   capacity: 0,
   weight: 0,
   value: 0,
-  item: [],
-};
+  item: []
+}
 
 let items = [
   { Name: "Computer Science Subjects", weight: 20, values: 10 },
@@ -43,11 +43,11 @@ test.onclick = function knapSacks() {
   } else {
     for (const i = 0; i < items.length; i++) {
       if (slct1.value == items[i].Name) {
-        selectObject = items[i];
+        selectObject = items[i]
         if (selectObject.weight + knapSack.weight <= knapSack.capacity) {
-          knapSack.item.push(selectObject);
-          knapSack.weight += selectObject.weight;
-          knapSack.value += selectObject.values;
+          knapSack.item.push(selectObject)
+          knapSack.weight += selectObject.weight
+          knapSack.value += selectObject.values
           text.innerHTML +=
             "Items:" +
             " " +
@@ -62,17 +62,16 @@ test.onclick = function knapSacks() {
             selectObject.values +
             "  " +
             "<br>" +
-            "<br>";
+            "<br>"
 
-          slct1.remove(slct1.selectedIndex);
-          totalW.innerHTML = "Total_weight:" + " " + knapSack.weight;
-          totalV.innerHTML = "Total_value:" + " " + knapSack.value;
-          capa.innerHTML = "Capacity:" + " " + knapSack.capacity;
+          slct1.remove(slct1.selectedIndex)
+          totalW.innerHTML = "Total_weight:" + " " + knapSack.weight
+          totalV.innerHTML = "Total_value:" + " " + knapSack.value
+          capa.innerHTML = "Capacity:" + " " + knapSack.capacity
         } else {
-          alert("size exceeded");
+          alert("size exceeded")
         }
-        console.log(knapSack.value);
       }
     }
   }
-};
+}
