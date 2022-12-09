@@ -25,7 +25,6 @@ let items = [
   (capacity = 0),
 ];
 
-let total = 0;
 let selectObject;
 
 load.onclick = function reload() {
