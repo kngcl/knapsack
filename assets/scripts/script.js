@@ -1,12 +1,12 @@
-var test = document.querySelector(".add");
-var load = document.querySelector(".reset");
-var text = document.querySelector(".text");
-var slct1 = document.getElementById("slct");
-var capi = document.getElementById("capacity");
-var done = document.querySelector(".done");
-var totalW = document.querySelector(".weight")
-var totalV = document.querySelector(".value")
-var capa = document.querySelector(".capacity")
+const test = document.querySelector(".add");
+const load = document.querySelector(".reset");
+const text = document.querySelector(".text");
+const slct1 = document.getElementById("slct");
+const capi = document.getElementById("capacity");
+const done = document.querySelector(".done");
+const totalW = document.querySelector(".weight");
+const totalV = document.querySelector(".value");
+const capa = document.querySelector(".capacity");
 let knapSack = {
   capacity: 0,
   weight: 0,
@@ -41,24 +41,33 @@ test.onclick = function knapSacks() {
   if (knapSack.capacity == 0) {
     alert("please enter the size basket");
   } else {
-    for (var i = 0; i < items.length; i++) {
+    for (const i = 0; i < items.length; i++) {
       if (slct1.value == items[i].Name) {
         selectObject = items[i];
         if (selectObject.weight + knapSack.weight <= knapSack.capacity) {
           knapSack.item.push(selectObject);
           knapSack.weight += selectObject.weight;
           knapSack.value += selectObject.values;
-          text.innerHTML += 'Items:' +' ' +
+          text.innerHTML +=
+            "Items:" +
+            " " +
             selectObject.Name +
             "  |   " +
-            'Weight:' + '  ' + selectObject.weight +
+            "Weight:" +
+            "  " +
+            selectObject.weight +
             "  |   " +
-           'Value:' + '  ' + selectObject.values +'  '+ '<br>' + '<br>';
-            
+            "Value:" +
+            "  " +
+            selectObject.values +
+            "  " +
+            "<br>" +
+            "<br>";
+
           slct1.remove(slct1.selectedIndex);
-          totalW.innerHTML ='Total_weight:'+' '+knapSack.weight
-          totalV.innerHTML ='Total_value:'+' '+knapSack.value
-          capa.innerHTML ='Capacity:'+' '+knapSack.capacity
+          totalW.innerHTML = "Total_weight:" + " " + knapSack.weight;
+          totalV.innerHTML = "Total_value:" + " " + knapSack.value;
+          capa.innerHTML = "Capacity:" + " " + knapSack.capacity;
         } else {
           alert("size exceeded");
         }
