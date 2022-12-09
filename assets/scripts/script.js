@@ -1,5 +1,5 @@
 var test = document.querySelector(".add");
-var load = document.querySelector(".Reset");
+var load = document.querySelector(".reset");
 var text = document.querySelector(".text");
 var slct1 = document.getElementById("slct");
 var capi = document.getElementById("capacity");
