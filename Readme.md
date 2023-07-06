@@ -1,3 +1,4 @@
+
 # Knapsack project
 
 The project is all about shopping card, given the possibility of choosing items and put inside baskets. Showing the capacity and the items selected by the clients.
@@ -52,3 +53,4 @@ Feel free to check the [issues page](https://github.com/kngcl/knapsack/issues).
 ## 📝 License
 
 This project is [charles](./LICENSE) licensed.
+
